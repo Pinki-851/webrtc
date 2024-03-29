@@ -25,3 +25,24 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+button {
+  @apply bg-btnPrimary px-4 py-2 rounded;
+}
+
+.icon {
+  @apply py-4 rounded-full text-white cursor-pointer bg-secondary hover:bg-btnPrimary;
+}
+.active {
+  @apply bg-btnPrimary;
+}
+.icon_player {
+  @apply rounded-full text-white absolute bottom-[1rem] right-[2rem];
+}
